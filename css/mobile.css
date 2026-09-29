@@ -16,7 +16,7 @@
         overflow-x: hidden;
     }
 
-    header, footer {
+    header, footer{
         width: 100%;
         /* width: 1920px; */
         max-width: none;
@@ -587,7 +587,7 @@
     }
     
     .popup {
-        width: 272px;
+        width: 85%;
         padding: 25px;
 
     }

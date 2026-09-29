@@ -116,6 +116,7 @@ header .inner .sub>li:hover {
 }
 
 header .inner .side {
+    align-items: center;
     display: flex;
     gap: 2.4rem;
     transition: all .3s;
@@ -152,7 +153,7 @@ header.on .navy {
 
 .popup {
     position: fixed;
-    width: 600px;
+    width: 550px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -163,14 +164,19 @@ header.on .navy {
     border: solid 1px #222;
     font-size: 2rem;
     color: #fff;
+    word-break: keep-all;
+    text-align: center;
+}
+.popup h2 {
+    font-weight: 500;
 }
 body.popup-open {
     overflow: hidden;
 }
 .popup button {
     position: absolute;
-    top: 0;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     width: 40px;
     height:40px;
     cursor: pointer;
@@ -237,6 +243,7 @@ section .inner {
 
 .outdoor-banner .inner {
     margin-top: 60px;
+    padding: 100px 20px 0 20px;
     position: relative;
     align-items: center;
     display: flex;
@@ -266,7 +273,7 @@ section .inner {
 }
 .outdoor-banner .inner .category a:hover {
     transform: translateY(-3px);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8)  !important;
 }
 .outdoor-banner .inner .category a:hover:nth-child(1) {
     opacity: 1;
@@ -579,7 +586,7 @@ section .inner {
 
 .setting-text .textin p {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #333;
 }
 
@@ -587,9 +594,9 @@ section .inner {
 .setting-text .btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     margin-top: 24px;
-    padding: 12px 26px;
+    padding: 16px 32px;
     border-radius: 30px;
     background: #333;
     color: #fff;
@@ -615,7 +622,7 @@ section .inner {
 
 .setting-slide {
     width: 70%;
-    height: 100%;
+    height: 548.67px;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -623,7 +630,7 @@ section .inner {
     margin: 0;
 }
 .swiper.slidebox {
-    overflow: visible;
+    overflow: hidden;
 
 }
 .swiper.slidebox .swiper-wrapper {
@@ -635,8 +642,9 @@ section .inner {
 }
 
 .setting-slide img {
-    width: 102%;
-    height: 104%;
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
